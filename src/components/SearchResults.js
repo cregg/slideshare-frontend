@@ -3,7 +3,6 @@ import GridList from 'material-ui/lib/grid-list/grid-list';
 import GridTile from 'material-ui/lib/grid-list/grid-tile';
 import LinearProgress from 'material-ui/lib/linear-progress';
 import Snackbar from 'material-ui/lib/snackbar';
-import config from 'webpack.config.js'
 
 
 const styles = {
@@ -64,7 +63,6 @@ export default class SearchResults extends React.Component {
     return (
       <div style={styles.root}>
         <div>
-        {config.api}
         {this.state.state_text}</div>
         <GridList 
           cellHeight={200}

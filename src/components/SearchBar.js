@@ -3,7 +3,6 @@ import TextField from 'material-ui/lib/text-field';
 import RaisedButton from 'material-ui/lib/raised-button';
 import SearchResults from './searchResults';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import config from 'webpack.config.js'
 
 
 injectTapEventPlugin();
@@ -66,9 +65,6 @@ export default class SearchBar extends React.Component {
           </div>
           <div>
           {"Code for checking results: " + this.state.search_url == null ? "None Yet." : this.state.search_url}
-          </div>
-          <div>
-            {config.api}
           </div>
           <div>
             <TextField 

@@ -64,7 +64,7 @@ export default class SearchBar extends React.Component {
               onTouchTap={this._submitSearch.bind(this)}/>
           </div>
           <div>
-          {"Code for checking results: " + this.state.search_url == null ? "None Yet." : this.state.search_url}
+          {this.state.search_url === null ? "" : "Use this code in the field below to check up on your search: " + this.state.search_url + ". You can also let the page run in the background. It will poll the server for updates."}
           </div>
           <div>
             <TextField 
